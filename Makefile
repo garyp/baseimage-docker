@@ -1,5 +1,5 @@
-NAME = phusion/baseimage
-VERSION = 0.9.15
+NAME = tylix/baseimage-docker
+VERSION = wheezy
 
 .PHONY: all build test tag_latest release ssh
 

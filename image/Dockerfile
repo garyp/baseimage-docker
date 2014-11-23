@@ -1,5 +1,5 @@
 FROM debian:wheezy
-MAINTAINER Phusion <info@phusion.nl>
+MAINTAINER Gary Peck <gary@realify.com>
 
 ENV HOME /root
 RUN mkdir /build
