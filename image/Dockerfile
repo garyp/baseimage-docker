@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:wheezy
 MAINTAINER Phusion <info@phusion.nl>
 
 ENV HOME /root
