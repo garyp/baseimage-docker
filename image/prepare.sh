@@ -40,8 +40,8 @@ apt-get dist-upgrade -y --no-install-recommends
 
 ## Fix locale.
 $minimal_apt_get_install locales
-dpkg-reconfigure locales
-/usr/sbin/locale-gen en_US
+sed -i -- 's/^# en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen
+/usr/sbin/locale-gen
 /usr/sbin/update-locale LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8
 echo -n en_US.UTF-8 > /etc/container_environment/LANG
 echo -n en_US.UTF-8 > /etc/container_environment/LC_CTYPE
