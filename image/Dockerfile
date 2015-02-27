@@ -2,7 +2,6 @@ FROM debian:wheezy
 MAINTAINER Gary Peck <gary@realify.com>
 
 ENV HOME /root
-RUN mkdir /build
 ADD . /build
 
 RUN /build/prepare.sh && \
